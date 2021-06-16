@@ -6,7 +6,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "homepage":"https://robertnebel.github.io/",
-    "deploy":"gh-pages -d website"
+    "deploy":"gh-pages -d ../robertnebel.github.io"
   },
   "devDependencies": {
     "vite": "^2.3.7"
