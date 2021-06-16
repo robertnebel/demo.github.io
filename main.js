@@ -1,7 +1,5 @@
 import './style.css';
 import * as THREE from './node_modules/three';
-// import { OrbitControls } from './node_modules/three/examples/jsm/controls/OrbitControls';
-// import { StaticReadUsage } from 'three';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth/ window.innerHeight, 0.1, 1000);
@@ -12,7 +10,6 @@ renderer.setPixelRatio(window.devicePixelRatio)
 renderer.setSize(window.innerWidth, window.innerHeight)
 camera.position.setZ(30);
 
-// renderer.render(scene, camera)
 
 const geometry = new THREE.TorusGeometry(10, 3, 16, 100)
 const material = new THREE.MeshStandardMaterial({color: 0xFF6347 })
@@ -27,11 +24,6 @@ const ambeintLight = new THREE.AmbientLight(0xffffff);
 
 scene.add(pointLight, ambeintLight)
 
-// const lightHelper = new THREE.PointLightHelper(pointLight)
-// const gridHelper = new THREE.GridHelper(200,50)
-// scene.add(lightHelper,gridHelper)
-
-// const controls = new OrbitControls(camera, renderer.domElement);
 
 function addStar(){
   const geometry = new THREE.SphereGeometry(0.25, 24,24);
